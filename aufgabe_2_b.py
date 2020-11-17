@@ -11,7 +11,7 @@ n       = 0
 
 # check wheather input is inside the range of 128 ASCII symbols
 while True:
-    s = input("Enter a String from the first 128 ASCII symbols: ")
+    s = input("Enter a String from the first 128 ASCII symbols: ").encode("ascii").decode("unicode_escape")
     for letter in s:
         if ord(letter) > 127:
             print("Invalid Input!")
@@ -44,6 +44,6 @@ elif n%2 != 0:
 
 print(repr(w))
 print(repr(wnew))
-print("A    = ", repr(A))
-print("B    = ", repr(B))
-print("B+A  = ", repr(B+A))
+print("A    = ", repr(A)[1:len(repr(A))-1]) #repr(w)[1:len(repr(w))-1]
+print("B    = ", repr(B)[1:len(repr(B))-1])
+print("B+A  = ", repr(B+A)[1:len(repr(A+B))-1])

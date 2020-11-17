@@ -26,4 +26,4 @@ w = ""
 for letter in s:
     w = w + chr( ( ord(letter) + v ) % 128 )
 
-print(repr(w))
+print(repr(w)[1:len(repr(w))-1])

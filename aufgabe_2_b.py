@@ -30,8 +30,10 @@ while True:
         print("Integer is negative!")
 
 for letter in s:
-    w = w + chr( ( ord(letter) - v ) % 128 )
-    wnew = wnew + "$" + chr( ( ord(letter) - v ) % 128 )
+    w       += chr( ( ord(letter) - v ) % 128 )
+    wnew    +="$" + chr( ( ord(letter) - v ) % 128 )
+
+# wnew = "$".join(w)
 
 wnew    = wnew[1:]
 n       = len(w)

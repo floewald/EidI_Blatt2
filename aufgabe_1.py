@@ -12,8 +12,8 @@ print("Wählen Sie bitte eine Option aus: (1-3)")
 print("1. Julianischer Kalender")
 print("2. Gregorianischer Kalender")
 print("3. Orthodoxer Kalender")
-o = int( input("Auswahl: ") )
-
+o = float( input("Auswahl: ") )
+# using float to allow invalid input like 2.45. No try-except statemant necessary to deal with ValueError using int(2.45)
 
 if not( float(o == 1) + float(o == 2) + float(o == 3) ):
     print("Keine gültige Auswahl!")

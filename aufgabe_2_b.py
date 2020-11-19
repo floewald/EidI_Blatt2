@@ -33,9 +33,10 @@ for letter in s:
     w       += chr( ( ord(letter) - v ) % 128 )
     wnew    +="$" + chr( ( ord(letter) - v ) % 128 )
 
-# wnew = "$".join(w)
 
 wnew    = wnew[1:]
+# or instead of the statement in the for loop just use the .join() method 
+#  wnew = "$".join(w)
 n       = len(w)
 if n%2 == 0:
     A = w[:n/2]

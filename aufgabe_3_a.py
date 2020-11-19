@@ -1,4 +1,4 @@
-# Moivtov,  Carina,     
+# Moitov,  Carina,     
 # Flaum,    Arthur,     
 # Ewald,    Florian,    333 068 94
 def bin2dez(numb_bin):

@@ -9,6 +9,9 @@ while True:
         if ord(letter) > 127:
             print("Invalid Input!")
             print("Input is outside the Range of 0-127!")
+            # or to terminate quit() or exit()
+            # exit()
+            # quit()
             break
 
     if ord(letter) < 127:
